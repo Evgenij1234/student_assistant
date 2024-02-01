@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "Страница автора";
+}
+@model GeneralModel
+@await Html.PartialAsync("Header")
+<main class="main_search1">
+    @foreach (var autor in Model.Autors)
+    {
+        if (autor.ID == Convert.ToInt32(ViewData["Message"]))
+        {
+            <!--Верхняя часть автора-->
+
+            <div class="main_search_info_autor">
+                <div class="info_autor_img_name">
+                    <div  class="info_autor_img_box">
+                        <img src="~/@autor.ImgUrlAutors" alt="" class="info_autor_img">
+                    </div>
+
+                    <div class="info_autor_name">
+                        <p class="info_autor_name_p">@autor.NameAutors</p>
+                    </div>
+                </div>
+                <div class="info_autor_opisanie">
+                    <p class="autor_opisanie_p">
+                        @autor.DescriptionAutorsAutors
+                    </p>
+                </div>
+            </div>
+
+            <!-- часть с книгами-->
+                <div class="main_centr">
+                    <div class="main_centr-book-text">
+                    Книги автора
+                </div>
+                <!-- часть с книгами-->
+
+                <div class="main_centr-book">
+                @foreach (var book in Model.Books)
+                {
+                        if (autor.NameAutors == book.AutorBook)
+                    {
+                        <div class="main_new-box_book">
+                        <!--Сылка на популярную книгу-->
+                        <div class="main_new-box_book-box1">
+                                    <a href="/Books/Book_page/@book.ID" class="main_new-box_book-a">
+                                <div class="box_book_img">
+                                      <img class="book_img" src="~/@book.ImgBigBook" alt="">
+                                </div>
+                                <div class="box_book_price">
+                                            @book.PraiseBook
+                                </div>
+                                <div class="box_book_name">
+                                            @book.NameBook
+                                </div>
+                                <div class="box_book_autor">
+                                            @book.AutorBook
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    }
+                }
+                </div>
+            </div>
+        }
+    }
+</main>
+@await Html.PartialAsync("Footer")
+
+

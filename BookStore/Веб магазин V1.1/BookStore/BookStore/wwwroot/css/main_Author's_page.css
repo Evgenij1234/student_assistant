@@ -1,0 +1,159 @@
+/*центральная часть сраницы автора*/
+.main_search1 {
+   
+}
+
+/*о авторе*/
+/*new*/
+
+.main_search_info_autor {
+    padding: 20px;
+}
+.info_autor_img_name {
+    display: flex;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: bolder;
+    font-style: italic;
+}
+.info_autor_img_box{
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+}
+.info_autor_img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+.info_autor_name {
+}
+.info_autor_name_p {
+}
+.info_autor_opisanie {
+    display: flex;
+    justify-content: center;
+}
+.autor_opisanie_p {
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*конец о авторе*/
+
+/*нижнийблок с книгами*/
+.main_centr{
+    display: grid;
+}
+.main_centr-book {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, 200px);
+    align-items: start;
+    justify-content: start;
+}
+/*new*/
+.main_centr-book-text{   
+     padding: 30px; 
+     font-weight: bold;   
+     font-size: 18pt;      
+
+}
+.main_new-box_book {
+    margin: 10px;
+    
+}
+
+.main_new-box_book-box1 {
+    margin-bottom: 10px;
+}
+
+.main_new-box_book-a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.box_book_img {
+    margin: 10px;
+}
+
+.book_img {
+    width: 100%;
+}
+
+.box_book_price {
+    word-wrap: break-word;
+}
+
+.box_book_name {
+    word-wrap: break-word;
+}
+
+.box_book_autor {
+    word-wrap: break-word;
+}
+
+.main_new-box_book-box2 {
+    display: grid;
+    grid-template-columns: 40px auto 40px;
+    background: rgb(236, 236, 236);
+    border-radius: 7px;
+    border-color: #b4b4b4;
+}
+
+.main_new-box_book-box-byton {
+    border: none;
+    border-color: rgb(236, 236, 236);
+    background: rgb(236, 236, 236);
+    border-radius: 5px;
+    height: 33px;
+}
+/*конец среднего блока с книгами*/
+
+/*нижний блок с цифрами*/
+
+.main_centr-end {
+    display: grid;
+    justify-content:center;
+    align-self: center;
+    padding-bottom: 30px;
+}
+.main_centr-end_pages {
+    display: flex;
+    column-gap:5px;
+}
+.main_centr-end_pages-text {
+}
+.main_centr-end_pages-int {
+    border: 1px solid black;
+    text-align: center;
+    width: 25px;
+    border-radius: 7px;
+
+}
+.main_centr-end_pages-box{
+    padding-left: 5px;
+
+}
+.main_centr-end_pages-int-a {
+    text-decoration: none;
+    color: #5e5e5e;
+}
+/*конец выборка книг правая*/
+
+/*конец средней састи поиска*/

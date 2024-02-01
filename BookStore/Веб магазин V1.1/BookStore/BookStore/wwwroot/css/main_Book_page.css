@@ -1,0 +1,86 @@
+/*средняя часть сраницы*/
+.main_book_page {
+}
+.main_book_page_start {
+}
+.book_page-start-label {
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 20px;
+}
+.book_page-label {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.book_page_start-content {
+    display: grid;
+    grid-template-columns: auto 200px;
+    padding: 25px;
+    gap: 20px;
+}
+.book_page_start-content-box-img {
+    padding-left: 25px;
+}
+.ook_page_start-content-img {
+    
+}
+.book_page_start-content-box-assaid {
+}
+.box-assaid_box {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.box-assaid_box1 {
+    display: flex;
+    padding-left: 25px;
+}
+.assaid_box1-text {
+    display: grid;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    justify-items:start;
+    padding-right: 25px;
+}
+.assaid_box1-int {
+    display: grid;
+    justify-items:end;
+}
+.box-assaid_box1-a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+.assaid_box1-svg {
+}
+.main_book_page_centr {
+    padding: 50px;
+}
+.book_page_centr-text {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.main_book_page_end {
+    padding: 50px;
+}
+.book_page-box {
+
+}
+.book_page-box_spisok {
+}
+.book_page-box_spisok-li {
+    display: flex;
+}
+.spisok-li_start {
+    font-weight: bolder;
+    font-size: 18px;
+}
+.spisok-li_end {
+}
+
+/*конец средней части */

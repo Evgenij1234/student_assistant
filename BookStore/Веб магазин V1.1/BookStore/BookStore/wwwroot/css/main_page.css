@@ -1,0 +1,137 @@
+              /*центральная часть*/
+.main {
+}
+               /*картинки вначале*/
+
+.main_picture {
+    height: 250px; 
+    overflow: hidden;
+    margin-top: 25px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.main_picture_img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+                         /*новинки*/
+
+.main_new {
+}
+.main_new-text {
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 25px;
+}
+.main_new-box {
+   display: grid;
+   grid-gap: 15px;
+   grid-template-columns: repeat(auto-fit, 200px);
+   align-items: center;
+   justify-content: center;
+}
+.main_new-box_book {
+    margin: 10px;
+}
+.main_new-box_book-a{
+    color: #000000;
+    text-decoration:none;
+}
+.box_book_img {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.book_img{
+    background-size: 100% auto;
+}
+.box_book_price {
+    word-wrap: break-word;
+    font-family: "Aria";
+    font-size: 18px;
+    font-weight: bold;
+}
+.box_book_name {
+    word-wrap: break-word;
+    font-family: "Aria";
+    font-size: 18px;
+}
+.box_book_autor {
+    word-wrap: break-word;
+    font-family: "Aria";
+    font-size: 18px;
+    font-style: italic;
+}
+                                /*Авторы популярные*/
+.main_popul_autor {
+}
+.main_popul_autor-text {
+    font-family: "Aria";
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    margin: 10px;
+}
+.main_popul_autor-box {
+   display: grid;
+   grid-gap: 15px;
+   grid-template-columns: repeat(auto-fit, 200px);
+   align-items: center;
+   justify-content: center;
+}
+
+.main_popul_autor_book {
+    margin: 10px;
+}
+.main_popul_autor_book-a{
+    color: #000000;
+    text-decoration:none;
+}
+.main_popul_autor_img {
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.popul_autor_img_src{
+    background-size: 100% auto
+}
+.main_popul_autor_name {
+    font-family: "Aria";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+            /*О нас*/
+
+.main_about_Us {
+    padding: 50px;
+}
+.about_Us_HB {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Aria";
+    font-size: 30px;
+    font-weight: bold;
+}
+.about_Us_sema {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap:100px;
+    font-family: "Aria";
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.about_Us_tth {
+    display: flex;
+    justify-content: center;
+    column-gap: 200px;
+    padding-top: 40px;
+    font-family: "Aria";
+    font-size: 20px;
+}
+                  /*Конец центральной части*/
+            

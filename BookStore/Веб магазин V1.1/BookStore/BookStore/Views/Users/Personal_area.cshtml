@@ -1,0 +1,69 @@
+﻿@model GeneralModel
+@{
+    ViewBag.Title = "Личный кабинет";
+}
+@await Html.PartialAsync("Header")
+<!--Главная часть-->
+<main class="main_personal_area">
+    <div class="main_personal_area-text">
+        Личный кабинет
+    </div>
+    <div class="main_personal_area-content">
+        <div>
+            <aside class="main_personal_area_aside">
+                <div class="personal_area_aside-box">
+                    <div class="personal_area_aside-box-svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             width="65px" height="90px">
+                            <image x="0px" y="0px" width="65px" height="90px"
+                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEEAAABaCAQAAABN7/OWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnAx8EAg3DwQpgAAAFAElEQVRo3u2aXUwUVxiGnzO7C4uowAIWjOsKSoGGYMSigqQtP9ZWYhMvbPqTmFjRmLZJk7betEm96LUX9cIEAty0SZOmSSHFtDWmSiWSQFv7Q6XFBm2AogJtKogo7J5esAsIu2dmdoZdL3jnZrPzzTnPvnvmnG++M6IB45IIQCbwGIXsIFd4KJYJYppf5Bj9dNHLLfEgFGdUThOxAKsoZz+VFCFABsHYFPzQwwW+5DKTZpoUplx4ShyRB1ijDBoXLbJJtBtv1bHfaOQ6+TanKCdRJy6RraJWJopeo14YRciXTRwh2SBuMlVsE12MGQnWDDW5RTZSY9SuoGpoJM8uhM2ymQqTAICskE3BgaqU/h/hlg3sNQ8AgI9U8Q0zVl2oY1+UAACvUqcXoodQJE+QYAHBJU9QZAUhkcNstAAAsJHX1DeyGsErD1oEAORB9c/QJBEPIWvxWkdgA7WqRUMTRDxWm54LIqma1QoExYVZFNhDIAvIig6hEJ9NLvgojHzSKSOfy8FlE4JL5kTngpm8Q0+q4ai4TGGQaSnaMrZSLqsecQSHjf0oclSnYpzclAGbXPKL4ehc+I1ReywQE/RFhzBAjz0I9DGoQFAsU3e4YhPCRUYUCIplakac454NAPc4j1+BoLy4U7RaJxAtdKrOqxHGaeKuRYIJmhmPHgE6+MyiB5/ToY7QQ5gSH/KzBYJ+TjFlDQGui3f5O0qAYfGm/o1tZPY7L44xFAXAkDjGV/phYeeFJTorjjOs39jDDnCctsVfhustrAthUNrEIb4zAXBJHFoIEPHHYeCZcm4Z6xdnuU8ua3W7HxSnxTv0hK7Vy3yMlzhgUlygQ9wnjfSIMdfEp7wnPpEmSj2mak0SurnCJkrYIwpJl3nBnCIg+hiUv3OJH7nBjLmMT9QbjsSBhOBsn0wSHny4COBgmhuMMBVcURyAwG8099R3wU0mueSwAy/Tc3YE8BOY60bgRMOBmBs6Lgbo4jr9jOhNTWoXsijjOcrIw23K25CmuEYnX9PJzWgQ1vEsdTwdVdeL1U4j57htDuEF3qLKlu5DukgzH4c7EW4sZPIBr+CxFQCe4UnKOLk0f1o6L2yjnpdIshkAIIFSSvh18bhYPEHX0kr1MnQfUjWt1KoQ9tFgS11FJS8ND9fwFiIUcYb1ywwAsJ4zC6tw8wg+PrKtpKEnH6fn+wohCN63+SZUq5KToXpmCKGWF2MIAPAyBxYipPEGKTFGcHOYtHmEGvbEGACgeraoqAEZHLW1lmBUTo6SMYuwk8o4AABUshM0nNSY3qezz4canBoeyuMEAFCOR8NHfhwR8vFpFMX8dlyoFIo0dscRAGC3ZludOVq5NFUJJiaa1uYS83gpoKn2S2Ki0vgPR69m4El5efVA4684I6DRHX+EuO9IPBIIcdcKwgrCCsIKwgpCeIQp641YktAojTPCKo0fuBq3LFrSzeuiPoEUqihlF8UkxewBV/Ivl/mCFv6ZLwCvoZgSKniCbFKXsd7g5z/+oJ1WumfdX1qD9rCd7WymgCzSSbXtpRo/YwxxlR5+on3hXnjkSnwm2Xh5nAK2kEUSOUb6CaMxbjHMEN308me4ZNnIrkwGmbjJx8EGtiLR2EUyAQAcZMzFjTKDABK4w/dM4qeLcQa4zYjqZQwjw2+UUQi+y5CCwMHzrCUASNzsJZsZXIzSxl0cgJsRvmUCyYQRm/4HXyVWvejj0QsAAAAASUVORK5CYII=" />
+                        </svg>
+                    </div>
+                    <div class="personal_area_aside-box-exit">
+                        <a href="Delete\@ViewData["ID"]" name="id" class="personal_area_aside-a">
+                            Удалить
+                        </a>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!--Центральная часть с формами-->
+
+        <div class="main_personal_area_centr">
+            <div class="main_personal_area_centr-FIO">
+                <form name="form1" class="personal_area_centr-FIO-form" action="/Users/Update" method="post">
+                    <p class="main_personal_area_centr-pasvord-text">Личные данные</p>
+                    <label for="" class="ersonal_area_centr-FIO-data">Имя</label>
+                    <input name="NameUsers" type="text" class="_area_centr-FIO-form-input" value="@ViewData["NameUsers"]" placeholder="Имя...">
+                    <label for="" class="ersonal_area_centr-FIO-data">Фамилия</label>
+                    <input name="FemileUsers" type="text" class="_area_centr-FIO-form-input" value="@ViewData["FemileUsers"]" placeholder="Фамилия">
+                    <label for="" class="ersonal_area_centr-FIO-data">Отчество</label>
+                    <input name="SurnameUsers" type="text" class="_area_centr-FIO-form-input" value="@ViewData["SurnameUsers"]" placeholder="Отчество">
+                    <label for="" class="ersonal_area_centr-FIO-data">Email</label>
+                    <input name="EmailUsers" type="text" class="_area_centr-FIO-form-input" value="@ViewData["EmailUsers"]" placeholder="Емайл...">
+                    <label for="" class="ersonal_area_centr-FIO-data">Дата рождения</label>
+                    <input name="DateUsers" type="date" class="_area_centr-FIO-form-input" value="@ViewData["DateUsers"]" placeholder="01.01.1991">
+                    <label for="" class="ersonal_area_centr-FIO-data">Пол</label>
+                    <div class="area_centr-FIO-form-checkbox_box">
+                        <input type="radio" name="GenderUsers" class="_area_centr-FIO-form-checkbox" value="@ViewData["GenderUsers"]">
+                        <div>Мужской</div>
+                    </div>
+                    <div class="area_centr-FIO-form-checkbox_box">
+                        <input type="radio" name="GenderUsers" class="_area_centr-FIO-form-checkbox" value="@ViewData["GenderUsers"]">
+                        <div>Женский</div>
+                    </div>
+                    <p class="main_personal_area_centr-pasvord-text">Смена пароля</p>
+                    <label for="" class="ersonal_area_centr-FIO-data">Новый пароль</label>
+                    <input name="PaswordlUsers" type="text" class="_area_centr-FIO-form-input" value="@ViewData["PaswordlUsers"]">
+                    <input name="ID" type="hidden" class="_area_centr-FIO-form-input" value="@ViewData["ID"]">
+                    <input type="submit" class="_area_centr-FIO-form-button" value="Сохранить">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+@await Html.PartialAsync("Footer")

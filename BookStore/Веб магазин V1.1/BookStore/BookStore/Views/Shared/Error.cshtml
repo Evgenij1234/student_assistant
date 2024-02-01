@@ -1,0 +1,8 @@
+﻿@{
+    ViewData["Title"] = "Ошибка";
+}
+@model GeneralModel
+@await Html.PartialAsync("Header")
+<div class="main_popul_autor-text">Пользователь не найден</div>
+@ViewData["NameUsers"];
+@await Html.PartialAsync("Footer")

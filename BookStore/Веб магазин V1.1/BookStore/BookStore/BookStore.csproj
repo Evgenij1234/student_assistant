@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="jQuery" Version="3.6.4" />
+    <PackageReference Include="jQuery.Validation" Version="1.19.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.jQuery.Unobtrusive.Ajax" Version="3.2.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img_Autors\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\img_Autors\1.png" />
+    <None Include="wwwroot\img_Autors\2.png" />
+    <None Include="wwwroot\img_Autors\3.png" />
+    <None Include="wwwroot\img_Autors\4.png" />
+    <None Include="wwwroot\img_Autors\5.png" />
+    <None Include="wwwroot\img_Autors\6.png" />
+    <None Include="wwwroot\img_Books\1.png" />
+    <None Include="wwwroot\img_Books\10.png" />
+    <None Include="wwwroot\img_Books\11.png" />
+    <None Include="wwwroot\img_Books\12.png" />
+    <None Include="wwwroot\img_Books\13.png" />
+    <None Include="wwwroot\img_Books\2.png" />
+    <None Include="wwwroot\img_Books\3.png" />
+    <None Include="wwwroot\img_Books\4.png" />
+    <None Include="wwwroot\img_Books\5.png" />
+    <None Include="wwwroot\img_Books\6.png" />
+    <None Include="wwwroot\img_Books\7.png" />
+    <None Include="wwwroot\img_Books\8.png" />
+    <None Include="wwwroot\img_Books\9.png" />
+  </ItemGroup>
+
+</Project>
