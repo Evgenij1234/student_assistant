@@ -1,7 +1,7 @@
 ﻿using BookStore.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using System.Data.Entity.Infrastructure.DependencyResolution;
+//using System.Data.Entity.Infrastructure.DependencyResolution;
 namespace BookStore.Controllers
 {
     public class BooksController : Controller

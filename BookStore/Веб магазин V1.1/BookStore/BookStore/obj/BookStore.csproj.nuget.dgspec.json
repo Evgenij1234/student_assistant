@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\project\\PET-project\\Магазин\\Веб магазин V1.1\\BookStore\\BookStore\\BookStore.csproj": {}
+    "D:\\project\\PET-project\\BookStore\\Веб магазин V1.1\\BookStore\\BookStore\\BookStore.csproj": {}
   },
   "projects": {
-    "D:\\project\\PET-project\\Магазин\\Веб магазин V1.1\\BookStore\\BookStore\\BookStore.csproj": {
+    "D:\\project\\PET-project\\BookStore\\Веб магазин V1.1\\BookStore\\BookStore\\BookStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\project\\PET-project\\Магазин\\Веб магазин V1.1\\BookStore\\BookStore\\BookStore.csproj",
+        "projectUniqueName": "D:\\project\\PET-project\\BookStore\\Веб магазин V1.1\\BookStore\\BookStore\\BookStore.csproj",
         "projectName": "BookStore",
-        "projectPath": "D:\\project\\PET-project\\Магазин\\Веб магазин V1.1\\BookStore\\BookStore\\BookStore.csproj",
+        "projectPath": "D:\\project\\PET-project\\BookStore\\Веб магазин V1.1\\BookStore\\BookStore\\BookStore.csproj",
         "packagesPath": "C:\\Users\\evgen\\.nuget\\packages\\",
-        "outputPath": "D:\\project\\PET-project\\Магазин\\Веб магазин V1.1\\BookStore\\BookStore\\obj\\",
+        "outputPath": "D:\\project\\PET-project\\BookStore\\Веб магазин V1.1\\BookStore\\BookStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,24 +39,17 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "AspNet.ScriptManager.jQuery": {
-              "target": "Package",
-              "version": "[3.6.0, )"
-            },
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.4.4, )"
-            },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.5, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.5, )"
@@ -64,16 +57,6 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.5, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[7.0.5, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[7.0.6, )"
             },
             "Microsoft.jQuery.Unobtrusive.Ajax": {
               "target": "Package",
@@ -107,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -15,9 +15,7 @@ class Futher extends React.Component{
                    <Link to="/AutorsProdject" className='FooterBoxA'>
                    Авторы
                    </Link>
-                   <button onclick={Mobile.download} className='FooterBoxbuttonMobile'>
-                   Мобайл
-                   </button>
+             
                 </div>
             </div>
         )

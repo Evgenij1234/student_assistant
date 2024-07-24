@@ -4,7 +4,7 @@
 }
 .body {
     display: grid;
-    grid-template-rows: 60px minmax(800px, auto) minmax(250px, auto);
+    grid-template-rows: 60px minmax(800px, auto) 150px;
     background-color: #5E5E5E;
 }
 /*Блок для размещения сайтбара и майн горизонтально*/
@@ -204,12 +204,13 @@ color: #000000;
 
 /*Футер*/
 .footer {
-    background-color: black; 
-    justify-content: center; 
-    display:grid;
+    background-color: black;
+    justify-content: start;
+    display: grid;
     grid-template-columns: minmax(250px,1000px);
     padding: 25px;
-  }
+    padding-left: 25px;
+}
   .FooterBox{
       background-color: rgb(0, 0, 0);
       display: grid;
