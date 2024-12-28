@@ -25,12 +25,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "export BROWSER=none && react-scripts start",
+    "start": "set BROWSER=none && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "electron": "electron .",
-    "dev": "ELECTRON_START_URL=http://localhost:3000 electron .",
+    "dev": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
     "package-win": "electron-builder --win",
     "package-linux": "electron-builder --linux",
     "make": "electron-forge make",
