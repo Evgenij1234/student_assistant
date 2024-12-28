@@ -1,0 +1,65 @@
+.DaysWeek-day-mine-newDat {
+    font-size: 11pt;
+    display: grid;
+    height: 25px;
+}
+
+.DaysWeek-day-mine-box {
+    display: grid;
+    gap: 0px;
+    background: #8DB9FF;
+    border: 1px solid #212023;
+    border-radius: 20px 20px 0px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    color: #212023;
+    margin-top: 10px;
+
+}
+.DaysWeek-day-Lesson_none {
+    background-color: rgba(33, 32, 35, 1);
+    border-top: solid 5px rgba(33, 32, 35, 1);
+    color: #8DB9FF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 48px;
+    align-items: center;
+    text-align: center;
+}
+
+.VeekSchedule {
+    padding-bottom: 40px;
+}
+.ViewLessonMain{
+    background-color: rgba(217, 217, 217, 1);
+    border-top: solid 5px rgba(33, 32, 35, 1);
+}
+.ViewLessonMain-view{
+    display: grid;
+    grid-template-columns: 150px auto 80px;
+    color: black;
+    padding: 5px;
+    min-height:110px;
+    
+}
+.ViewLessonMain-view-time{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    border-right: 1px solid rgba(33, 32, 35, 1);
+    margin-right: 10px;
+    font-weight: 600;
+}
+.ViewLessonMain-view-description{
+
+}
+.ViewLessonMain-view-description-text{
+
+}

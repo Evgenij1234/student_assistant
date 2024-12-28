@@ -1,0 +1,152 @@
+.Income {
+    padding-top: 50px;
+    display: grid;
+    padding-left: 30px;
+}
+
+.Income-name_view {
+    font-family: 'Literata';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.Income-add {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    background-color: rgba(33, 32, 35, 1);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+    margin-left: 11px;
+    padding-top: 20px;
+}
+
+.Income-box_input {
+    display: grid;
+    grid-template-columns: minmax(150px, 300px) 150px;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.Income-box_input_dat {
+    display: grid;
+    grid-template-columns: minmax(100px, 150px) 150px;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.Income-box_input-input {
+    height: 30px;
+    left: 8px;
+    top: 3px;
+    background: #212023;
+    border: 1px solid #8DB9FF;
+    box-shadow: inset 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #8DB9FF;
+
+}
+
+.Income-ok {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    background: #8DB9FF;
+    border: 1px solid #8DB9FF;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
+}
+
+
+.ViewIncome {
+    background-color: rgba(217, 217, 217, 1);
+    border-top: solid 5px rgba(33, 32, 35, 1);
+    margin-right: 30px;
+}
+
+.ViewIncome-view {
+    display: grid;
+    grid-template-columns: 150px auto 80px;
+    color: black;
+    padding: 5px;
+    height: 110px;
+}
+
+.ViewIncome-view-time {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    border-right: 1px solid rgba(33, 32, 35, 1);
+    margin-right: 10px;
+}
+
+.ViewIncome-view-description {}
+
+.ViewIncome-view-description-text {}
+
+.ViewIncome-view-description-text-grid {
+    display: grid;
+    grid-template-columns: auto 250px;
+}
+
+.ViewIncome-view-description-delit {
+    display: grid;
+    grid-template-columns: 40px 40px;
+    text-align: end;
+    align-items: end;
+}
+
+.ViewIncome-view-description-delit-button {
+    border: none;
+    background-color: rgba(217, 217, 217, 1);
+}
+
+.ViewIncome-view-description-delit-button-img {
+    width: 20px;
+    height: 20px;
+}
+.Income-box-input-sum{
+    display: grid;
+    grid-template-columns: minmax(100px, 250px) 150px;
+    gap: 20px;
+    padding-top: 20px;
+    color: #8DB9FF;
+}
+.Income-box-input-sum-textarea{
+    height: 115px;
+    left: 8px;
+    top: 3px;
+    background: #212023;
+    border: 1px solid #8DB9FF;
+    box-shadow: inset 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #8DB9FF;
+    line-height: 1;
+}
+.glow_around-sum-textarea-false{
+    height: 115px;
+    left: 8px;
+    top: 3px;
+    background: #212023;
+    border: 1px solid #ff0000;
+    box-shadow: inset 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #8DB9FF;
+    line-height: 1;
+}
+.glow_around-sum-textarea-false:hover {
+    box-shadow: 0 0 10px 2px #ff0000;
+}

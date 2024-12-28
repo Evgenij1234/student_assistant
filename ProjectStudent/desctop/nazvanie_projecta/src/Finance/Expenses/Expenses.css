@@ -1,0 +1,213 @@
+.Expenses {
+    padding-top: 50px;
+    display: grid;
+    padding-left: 30px;
+}
+
+.Expenses-name_view {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8DB9FF;
+    padding-bottom: 10px;
+}
+
+.Expenses-add {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    background-color: rgba(33, 32, 35, 1);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8DB9FF;
+    padding-bottom: 15px;
+    margin-left: 11px;
+    padding-top: 20px;
+}
+.Expense-box_input {
+    display: grid;
+    grid-template-columns: minmax(150px, 300px) 150px;
+    gap: 20px;
+    padding-top: 20px;
+    color: #8DB9FF;
+}
+.Expense-box_input_dat_sum{
+    display: grid;
+    grid-template-columns: minmax(100px, 150px) 150px;
+    gap: 20px;
+    padding-top: 20px;
+    color: #8DB9FF;
+}
+.Expense-box_input-input {
+    height: 30px;
+    left: 8px;
+    top: 3px;
+    background: #212023;
+    border: 1px solid #8DB9FF;
+    box-shadow: inset 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #8DB9FF;
+    
+}
+.Expense-box_input-input-dat{
+    text-align: center;
+    height: 30px;
+    width: 50px;
+    left: 8px;
+    top: 3px;
+    background: #212023;
+    border: 1px solid #8DB9FF;
+    box-shadow: inset 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #8DB9FF;
+}
+.Expense-ok {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    background: #8DB9FF;
+    border: 1px solid #8DB9FF;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
+}
+
+
+
+
+
+.ViewExpense {
+    background-color: #8DB9FF;
+    border-top: solid 5px rgba(33, 32, 35, 1);
+    margin-right: 30px;
+}
+
+.Expense-view {
+    display: grid;
+    grid-template-columns: 150px auto 80px;
+    color: black;
+    padding: 5px;
+    height: 110px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Expense-view-time {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    border-right: 1px solid rgba(33, 32, 35, 1);
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.Expense-view-description {
+    
+}
+
+.Expense-view-description-text {}
+.Expense-view-description-text-grid{
+    display: grid;
+    grid-template-columns: auto 250px;
+}
+
+.Expense-view-description-delit {
+    display: grid;
+    grid-template-columns: 40px 40px;
+    text-align: end;
+    align-items: end;
+
+}
+
+.Expense-view-description-delit-button {
+   border: none;
+   background-color: #8DB9FF;
+}
+
+.Expense-view-description-delit-button-img {
+    width: 20px;
+    height: 20px;
+}
+
+.Expense-save-button {
+    box-sizing: border-box;
+    width: 150px;
+    height: 35px;
+    left: 0px;
+    top: 0px;
+    background: #8DB9FF;
+    border: 1px solid #8DB9FF;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin-top: 20px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+.glow_around-false-name {
+    height: 30px;
+    left: 8px;
+    top: 3px;
+    background: #212023;
+    border: 1px solid #ff0000;
+    box-shadow: inset 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #8DB9FF;
+}
+
+.glow_around-false-name:hover {
+    box-shadow: 0 0 10px 2px #ff0000;
+}
+.glow_around-false-date {
+    display: grid;
+    text-align: center;
+    height: 30px;
+    width: 50px;
+    left: 8px;
+    top: 3px;
+    background: #212023;
+    border: 1px solid #ff0000;
+    box-shadow: inset 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #8DB9FF;
+}
+
+.glow_around-false-date:hover {
+    box-shadow: 0 0 10px 2px #ff0000;
+}
+.glow_around-false-sum {
+    height: 30px;
+    left: 8px;
+    top: 3px;
+    background: #212023;
+    border: 1px solid #ff0000;
+    box-shadow: inset 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #8DB9FF;
+}
+
+.glow_around-false-sum:hover {
+    box-shadow: 0 0 10px 2px #ff0000;
+}
+.Expense-cansel{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 80px;
+    height: 40px;
+    background: #8DB9FF;
+    border: 1px solid #8DB9FF;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+  

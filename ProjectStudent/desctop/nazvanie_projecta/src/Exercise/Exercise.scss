@@ -1,0 +1,163 @@
+@mixin boxName {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8DB9FF;
+    padding-bottom: 10px;
+}
+
+@mixin box {
+    padding-top: 50px;
+    display: grid;
+    padding-left: 30px;
+}
+
+@mixin fontStandart {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@mixin fontWight {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@mixin collorStandart {
+    background-color: rgba(33, 32, 35, 1);
+    color: #8DB9FF;
+}
+
+@mixin collorInvert {
+    background-color: #8DB9FF;
+    color: rgba(33, 32, 35, 1);
+}
+
+@mixin Centr {
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+
+
+.ExerciseContent {
+    @include box;
+}
+
+.ExerciseContent-name {
+    @include boxName;
+}
+
+.ExerciseContent-oneComponetn {}
+
+
+.ExerciseContent-Add {
+    @include fontStandart;
+    @include collorStandart;
+    border: none;
+    padding-bottom: 15px;
+    margin-left: 11px;
+    margin-top: 20px;
+    width: 150px;
+}
+
+.ExerciseOne {
+    display: grid;
+    border: 1px solid #8DB9FF;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.ExerciseOne-box_input {
+    display: grid;
+    gap: 20px;
+    padding-top: 20px;
+    color: #8DB9FF;
+
+    &.ExerciseOne-box_input_dat {
+        width: 300px;
+        display: flex;
+    }
+}
+
+.ExerciseOne_input-input {
+    height: 30px;
+    left: 8px;
+    top: 3px;
+    background: #212023;
+    border: 1px solid #8DB9FF;
+    box-shadow: inset 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #8DB9FF;
+
+    &.ExerciseOne_input-input-discription {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        resize: none;
+    }
+}
+
+.ExerciseOne-ok {
+    @include collorInvert;
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #8DB9FF;
+    border-radius: 5px;
+}
+.ExerciseOne-Сancellation{
+    @include collorInvert;
+    margin-top: 20px;
+    width: 90px;
+    height: 40px;
+    border: 1px solid #8DB9FF;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.ExerciseOne-old {
+    @include collorInvert;
+    display: grid
+}
+
+.ExerciseOne-text-shortDescription {
+    @include fontWight;
+}
+
+.ExerciseOne-text {
+    @include fontStandart;
+    word-break: break-all;
+}
+
+.ExerciseOne-button-box {
+    display: grid;
+    justify-content: end;
+    gap: 10px;
+    grid-template-columns: 50px 50px;
+}
+
+.ExerciseOne-button-box-button {
+    background-color: #8DB9FF;
+    border: none;
+    width: 70px;
+    height: 30px;
+}
+
+.ExerciseOne-button-box-button-img {
+    width: 25px;
+    height: 25px;
+}
+.error{
+    color: red;
+}

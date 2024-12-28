@@ -1,0 +1,156 @@
+.AddSchedule {
+    padding-top: 50px;
+    display: grid;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+.AddSchedule-add_new_schedule {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8DB9FF;
+    padding-bottom: 10px;
+}
+
+.AddSchedule-block_name_schedule {
+    display: grid;
+    grid-template-columns: minmax(200px, 600px) auto;
+    gap: 15px;
+    padding-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.AddSchedule-block_name_schedule-input {
+    background-color: rgba(33, 32, 35, 1);
+    box-sizing: border-box;
+    border: 1px solid #8DB9FF;
+    box-shadow: inset 10px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8DB9FF;
+}
+
+.AddSchedule-block_name_schedule-input-false {
+    background-color: rgba(33, 32, 35, 1);
+    box-sizing: border-box;
+    border: 1px solid #ff0000;
+    box-shadow: inset 10px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8DB9FF;
+}
+
+.AddSchedule-block_name_schedule-input-false:hover {
+    box-shadow: 0 0 10px 2px #ff0000;
+}
+
+.AddSchedule-block_name_schedule-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8DB9FF;
+}
+
+.AddSchedule-block_calendar {
+    padding-bottom: 15px;
+    display: flex;
+}
+
+.AddSchedule-block_calendar-open {
+    background-color: rgba(141, 185, 255, 1);
+    display: grid;
+    grid-template-columns: 90px auto;
+    gap: 15px;
+    box-sizing: border-box;
+    border: 1px solid #8DB9FF;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.AddSchedule-block_calendar-open-text {
+    text-align: center;
+    align-items: center;
+}
+
+.AddSchedule-block_calendar-img {
+    width: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.AddSchedule-block_calendar-text {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    padding-left: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8DB9FF;
+}
+
+.AddSchedule-box {
+    padding-right: 30px;
+}
+
+.AddSchedule-box_save {}
+
+.AddSchedule-box_save-button {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    background-color: rgba(33, 32, 35, 1);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #8DB9FF;
+
+
+}
+
+.AddSchedule-save {}
+
+.AddSchedule-save-button {
+    box-sizing: border-box;
+
+    width: 150px;
+    height: 35px;
+    left: 0px;
+    top: 0px;
+    background: #8DB9FF;
+    border: 1px solid #8DB9FF;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin-top: 20px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}

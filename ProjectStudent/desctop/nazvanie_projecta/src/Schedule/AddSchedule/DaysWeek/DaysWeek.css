@@ -1,0 +1,50 @@
+.DaysWeek {
+    color: #8DB9FF;
+}
+
+.DaysWeek-day {
+    background: #8DB9FF;
+    border: 1px solid #212023;
+    border-radius: 20px 20px 0px 0px;
+    font-family: 'Literata';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    color: #212023;
+    padding-bottom: 5px;
+}
+
+.DaysWeek-addLesson {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    background-color: rgba(33, 32, 35, 1);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8DB9FF;
+    padding-bottom: 15px;
+    margin-left: 11px;
+    padding-top: 20px;
+}
+.DaysWeek-addLesson-text{
+    color: #8DB9FF;
+}
+.DaysWeek-day-view{
+
+}
+.DaysWeek-day-view-time{
+
+}
+.DaysWeek-day-view-description{
+    
+}

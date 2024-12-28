@@ -1,0 +1,152 @@
+.Lesson {}
+
+.Lesson-box_input {
+    display: grid;
+    grid-template-columns: minmax(300px, 600px) 150px;
+    gap: 20px;
+    padding-top: 20px;
+    color: #8DB9FF;
+}
+
+.Lesson-box_input-input {
+    height: 30px;
+    left: 8px;
+    top: 3px;
+    background: #212023;
+    border: 1px solid #8DB9FF;
+    box-shadow: inset 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #8DB9FF;
+}
+
+.glow_around-false {
+    height: 30px;
+    left: 8px;
+    top: 3px;
+    background: #212023;
+    border: 1px solid #ff0000;
+    box-shadow: inset 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #8DB9FF;
+}
+
+.glow_around-false:hover {
+    box-shadow: 0 0 10px 2px #ff0000;
+}
+
+.Lesson-box_time {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 270px 270px;
+}
+
+.Lesson-box_time-div {
+    display: flex;
+}
+
+.Lesson-box_time-input {
+    margin-right: 20px;
+    width: 100px;
+    height: 30px;
+    left: 8px;
+    top: 3px;
+    background: #212023;
+    border: 1px solid #8DB9FF;
+    box-shadow: inset 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #8DB9FF;
+
+}
+.Lesson-box_time-input-else{
+    margin-right: 20px;
+    width: 100px;
+    height: 30px;
+    left: 8px;
+    top: 3px;
+    background: #212023;
+    border: 1px solid #ff0000;
+    box-shadow: inset 10px 5px 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: #8DB9FF;
+}
+.Lesson-box_time-input-else:hover{
+    box-shadow: 0 0 10px 2px #ff0000;
+}
+#timeSelect_start {
+    -webkit-appearance: none;
+    /* Для Webkit (Chrome, Safari, etc.) */
+    -moz-appearance: none;
+    /* Для Firefox */
+    appearance: none;
+    /* Общий вариант */
+    background-image: none;
+    /* Убираем стандартную стрелку */
+}
+
+#timeSelect_stop {
+    -webkit-appearance: none;
+    /* Для Webkit (Chrome, Safari, etc.) */
+    -moz-appearance: none;
+    /* Для Firefox */
+    appearance: none;
+    /* Общий вариант */
+    background-image: none;
+    /* Убираем стандартную стрелку */
+}
+
+#minutesSelect_stop {
+    -webkit-appearance: none;
+    /* Для Webkit (Chrome, Safari, etc.) */
+    -moz-appearance: none;
+    /* Для Firefox */
+    appearance: none;
+    /* Общий вариант */
+    background-image: none;
+    /* Убираем стандартную стрелку */
+}
+
+#minutesSelect_start {
+    -webkit-appearance: none;
+    /* Для Webkit (Chrome, Safari, etc.) */
+    -moz-appearance: none;
+    /* Для Firefox */
+    appearance: none;
+    /* Общий вариант */
+    background-image: none;
+    /* Убираем стандартную стрелку */
+}
+
+.Lesson-box_time-div {}
+
+.timeSelect {
+    width: 46px;
+    background-color: #212023;
+    color: #8DB9FF;
+    align-items: center;
+    text-align: center;
+    border: none;
+    height: 100%;
+}
+
+.custom-option {}
+
+.Lesson-ok {
+    margin-top: 20px;
+    width: 40px;
+    height: 40px;
+    background: #8DB9FF;
+    border: 1px solid #8DB9FF;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+
+}
+.Lesson-CloseLesson{
+    margin-top: 20px;
+    width: 80px;
+    margin-left: 20px;
+    height: 40px;
+    background: #8DB9FF;
+    border: 1px solid #8DB9FF;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}

@@ -1,0 +1,12 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+    
+# config/routes.yaml
+
+# имя маршрута "app_lucky_number" пока не важно
+app_lucky_number:
+    path: /test
+    controller: App\Controller\TestController::number    

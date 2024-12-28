@@ -1,0 +1,59 @@
+.MySchedule {
+    padding: 50px;
+    display: grid;
+    padding-left: 30px;
+}
+
+.MySchedule-top {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #8DB9FF;
+    padding-bottom: 10px;
+}
+
+.ThisMySchedule {
+    display: grid;
+    grid-template-columns: minmax(300px, 600px) 1fr 160px 130px 65px;
+    border-top: solid 1px #8DB9FF;
+    border-bottom: solid 1px #8DB9FF;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    align-items: center;
+}
+
+.ThisMySchedule-name {
+    font-weight: bolder;
+    color: #8DB9FF;
+}
+
+.ThisMySchedule-click {
+    color: rgba(33, 32, 35, 1);
+}
+
+.ThisMySchedule-gap {}
+
+.ThisMySchedule-click-button {
+    background-color: #8DB9FF;
+    border: none;
+    height: 30px;
+}
+
+.ThisMySchedule-click-button-Link{
+    background-color: #8DB9FF;
+    border: none;
+    height: 30px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.ThisMySchedule-click-button-Link{
+    text-decoration: none;
+    color: black;
+    display: grid;
+}

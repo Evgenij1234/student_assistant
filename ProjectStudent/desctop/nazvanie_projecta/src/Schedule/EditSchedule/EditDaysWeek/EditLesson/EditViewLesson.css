@@ -1,0 +1,43 @@
+.ViewLesson {
+    background-color: rgba(217, 217, 217, 1);
+    border-top: solid 5px rgba(33, 32, 35, 1);
+}
+
+.ViewLesson-view {
+    display: grid;
+    grid-template-columns: 150px auto 80px;
+    color: black;
+    padding: 5px;
+    height: 110px;
+}
+
+.ViewLesson-view-time {
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
+.ViewLesson-view-description {}
+
+.ViewLesson-view-description-text {}
+.ViewLesson-view-description-text-grid{
+    display: grid;
+    grid-template-columns: auto 250px;
+}
+
+.ViewLesson-view-description-delit {
+    display: grid;
+    grid-template-columns: 40px 40px;
+    text-align: end;
+    align-items: end;
+}
+
+.ViewLesson-view-description-delit-button {
+   border: none;
+   background-color: rgba(217, 217, 217, 1);
+}
+
+.ViewLesson-view-description-delit-button-img {
+    width: 20px;
+    height: 20px;
+}
