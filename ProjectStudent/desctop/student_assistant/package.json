@@ -1,7 +1,7 @@
 {
   "name": "student_assistant",
   "version": "0.1.0",
-  "author": "Ваше Имя evgenij.semenov.1998@bk.ru",
+  "author": "Semenov Evgenij evgenij.semenov.1998@bk.ru",
   "private": true,
   "main": "electron/main.js",
   "productName": "student_assistant",
@@ -66,8 +66,8 @@
   },
   "build": {
     "appId": "com.example.studenthelper",
-    "productName": "Помощник студента",
-    "copyright": "Copyright © 2023 Ваше Имя",
+    "productName": "student_assistant",
+    "copyright": "Copyright © 2023 Semenov Evgenij",
     "directories": {
       "output": "dist"
     },
@@ -83,11 +83,11 @@
         "portable"
       ],
       "icon": "electron/ico/icon.ico",
-      "legalTrademarks": "Помощник студента",
-      "publisherName": "Ваше Имя"
+      "legalTrademarks": "student_assistant",
+      "publisherName": "Semenov Evgenij"
     },
     "linux": {
-      "maintainer": "Ваше Имя evgenij.semenov.1998@bk.ru",
+      "maintainer": "Semenov Evgenij evgenij.semenov.1998@bk.ru",
       "target": [
         "AppImage"
       ],
