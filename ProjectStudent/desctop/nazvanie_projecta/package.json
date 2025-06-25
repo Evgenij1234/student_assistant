@@ -33,8 +33,7 @@
     "electron": "electron .",
     "dev": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
     "package-win": "electron-builder --win",
-    "package-linux": "electron-builder --linux",
-    "make": "electron-forge make"
+    "package-linux": "electron-builder --linux"
   },
   "eslintConfig": {
     "extends": [
@@ -58,7 +57,7 @@
     "@electron-forge/cli": "^7.2.0",
     "@electron-forge/maker-deb": "^7.2.0",
     "@electron-forge/maker-rpm": "^7.2.0",
-    "@electron-forge/maker-squirrel": "^7.2.0",
+    "@electron-forge/maker-squirrel": "^7.8.1",
     "@electron-forge/maker-zip": "^7.2.0",
     "@electron-forge/plugin-auto-unpack-natives": "^7.2.0",
     "electron": "^29.1.5",
@@ -68,23 +67,41 @@
   "build": {
     "appId": "com.example.studenthelper",
     "productName": "Помощник студента",
+    "copyright": "Copyright © 2023 Ваше Имя",
     "directories": {
-      "output": "dist"  
+      "output": "dist"
     },
     "files": [
-      "build/**/*",     
-      "electron/**/*",   
+      "build/**/*",
+      "electron/**/*",
       "node_modules/**/*",
       "package.json"
     ],
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ],
+      "icon": "electron/ico/icon.ico",
+      "legalTrademarks": "Помощник студента",
+      "publisherName": "Ваше Имя"
+    },
     "linux": {
       "maintainer": "Ваше Имя evgenij.semenov.1998@bk.ru",
-      "target": ["AppImage"],  
-      "icon": "electron/ico/icon.png",                
+      "target": [
+        "AppImage"
+      ],
+      "icon": "electron/ico/icon.png",
       "category": "Utility"
     },
     "extraMetadata": {
-      "main": "electron/main.js" 
+      "main": "electron/main.js"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
     }
   }
 }
