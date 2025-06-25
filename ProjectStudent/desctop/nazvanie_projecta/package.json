@@ -1,9 +1,10 @@
 {
-  "name": "nazvanie_projecta",
+  "name": "student_assistant",
   "version": "0.1.0",
+  "author": "Ваше Имя evgenij.semenov.1998@bk.ru",
   "private": true,
   "main": "electron/main.js",
-  "productName": "Помощник студента",
+  "productName": "student_assistant",
   "homepage": "./",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "7.21.0",
@@ -33,9 +34,7 @@
     "dev": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
     "package-win": "electron-builder --win",
     "package-linux": "electron-builder --linux",
-    "make": "electron-forge make",
-    "build-electron": "mkdir build/electron && cp -r electron/. build/electron",
-    "package": "electron-builder build --win -c.extraMetadata.main=build/electron/main.js --publish never"
+    "make": "electron-forge make"
   },
   "eslintConfig": {
     "extends": [
@@ -67,17 +66,25 @@
     "sass": "^1.77.6"
   },
   "build": {
-    "files": [
-      "build/**/*",
-      "node_modules/**/*"
-    ],
-    "win": {
-      "icon": "build/electron/ico/icon.ico"
+    "appId": "com.example.studenthelper",
+    "productName": "Помощник студента",
+    "directories": {
+      "output": "dist"  
     },
-    "publish": {
-      "provider": "github",
-      "repo": "electron-cra-example",
-      "owner": "Evgenij1234"
+    "files": [
+      "build/**/*",     
+      "electron/**/*",   
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "linux": {
+      "maintainer": "Ваше Имя evgenij.semenov.1998@bk.ru",
+      "target": ["AppImage"],  
+      "icon": "electron/ico/icon.png",                
+      "category": "Utility"
+    },
+    "extraMetadata": {
+      "main": "electron/main.js" 
     }
   }
 }
