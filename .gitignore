@@ -4,6 +4,7 @@ test_desctop/
 Pec/
 build/
 release/
+dist/
 # dependencies
 /node_modules
 /.pnp
