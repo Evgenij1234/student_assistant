@@ -21,20 +21,38 @@ const createWindow = () => {
     }
   })
 
-  // и загрузить index.html приложения.
-  //mainWindow.loadFile(path.join(__dirname,'../index.html'));//закомменитровать если надо перейти к dev версии
+   // Загрузка приложения в зависимости от режима работы
+  if (process.env.ELECTRON_START_URL) {
+    // Режим разработки - подключаемся к webpack-dev-server
+    mainWindow.loadURL(process.env.ELECTRON_START_URL);
+    mainWindow.webContents.openDevTools(); // Автоматически открываем DevTools в dev-режиме
+    console.log('Running in development mode');
+  } else {
+    // Production режим - пробуем разные варианты загрузки
+    try {
+      // Сначала пробуем загрузить из build-папки (стандартный путь для create-react-app)
+      const buildPath = path.join(__dirname, '../build/index.html');
+      if (fs.existsSync(buildPath)) {
+        mainWindow.loadFile(buildPath);
+        console.log('Loaded from build directory');
+      } else {
+        // Если билда нет, пробуем загрузить напрямую (для кастомных конфигураций)
+        const fileUrl = url.format({
+          pathname: path.join(__dirname, '../index.html'),
+          protocol: 'file:',
+          slashes: true
+        });
+        mainWindow.loadURL(fileUrl);
+        console.log('Loaded directly from index.html');
+      }
+    } catch (error) {
+      console.error('Failed to load application:', error);
+      dialog.showErrorBox('Ошибка', 'Не удалось загрузить приложение');
+      app.quit();
+    }
+  }
 
-  const startUrl = process.env.ELECTRON_START_URL || url.format({
-    pathname: path.join(__dirname, '../index.html'),
-    protocol: 'file:',
-    slashes: true
-  });
-
-  mainWindow.loadURL(startUrl); //закомментировать если надо перейти к билд версии
-  mainWindow.loadURL('http://localhost:3000');//закомментировать если надо перейти к билд версии
-
-  // Отображаем средства разработчика.
-  mainWindow.webContents.openDevTools()
+  // Всегда скрываем меню (ваша оригинальная настройка)
   mainWindow.setMenuBarVisibility(false);
 }
 //закрыть
@@ -64,12 +82,6 @@ ipcMain.on('max-window', () => {
   }
 });
 
-
-
-
-
-
-
 app.on('window-all-closed', function () {
 
   if (process.platform !== 'darwin') app.quit()
@@ -83,15 +95,41 @@ const configSchedulePath = path.join(userDataPath, 'store_electron', 'configSche
 const financePath = path.join(userDataPath, 'store_electron', 'finance');
 const exercisePath = path.join(userDataPath, 'store_electron', 'exercise');
 // Обеспечить существование папкок
-if (!fs.existsSync(schedulePath)) {
-  fs.mkdirSync(schedulePath, { recursive: true });
+// Обеспечить существование папок с обработкой ошибок
+function ensureDirSync(dirPath) {
+  try {
+    if (!fs.existsSync(dirPath)) {
+      fs.mkdirSync(dirPath, { recursive: true });
+      console.log(`Created directory: ${dirPath}`);
+    }
+  } catch (err) {
+    console.error(`Failed to create directory ${dirPath}:`, err);
+    throw err; // Пробрасываем ошибку дальше для обработки в вызывающем коде
+  }
 }
-if (!fs.existsSync(financePath)) {
-  fs.mkdirSync(financePath, { recursive: true });
-}
-if (!fs.existsSync(exercisePath)) {
-  fs.mkdirSync(exercisePath, { recursive: true });
-}
+
+// Создаем все необходимые папки
+[schedulePath, financePath, exercisePath].forEach(ensureDirSync);
+
+// Создаем обязательные файлы с дефолтным содержимым (если их нет)
+const requiredFiles = {
+  [configSchedulePath]: '',
+  [path.join(financePath, 'Expense.json')]: '[]',
+  [path.join(financePath, 'Income.json')]: '[]',
+  [path.join(financePath, 'Summ.json')]: '0',
+  [path.join(exercisePath, 'Exercise.json')]: '[]'
+};
+
+Object.entries(requiredFiles).forEach(([filePath, defaultContent]) => {
+  try {
+    if (!fs.existsSync(filePath)) {
+      fs.writeFileSync(filePath, defaultContent);
+      console.log(`Created default file: ${filePath}`);
+    }
+  } catch (err) {
+    console.error(`Failed to create file ${filePath}:`, err);
+  }
+});
 
 //Сохранить файл расписания
 ipcMain.handle('save-file', async (event, fileName, fileContent) => {
@@ -188,11 +226,6 @@ ipcMain.handle('get-file-schedule', async (event) => {
   }
 });
 
-
-
-
-
-
 //Расходы
 const filePathExpense = path.join(financePath, 'Expense.json');
 //Сохранить файл расходов
@@ -219,12 +252,6 @@ ipcMain.handle('get-file-expense', async (event) => {
     throw error;
   }
 });
-
-
-
-
-
-
 
 const filePathIncome = path.join(financePath, 'Income.json');
 //Сохранить файл доходов
@@ -276,8 +303,6 @@ ipcMain.handle('Add-summ', async (event, fileContent) => {
     }
   });
 });
-
-
 
 //Задания
 //Сохранить задания
