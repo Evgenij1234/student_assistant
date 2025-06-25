@@ -1,60 +1,23 @@
+# student_assistant
+Приложение для отслеживания расписания, учета финансов и заметок
 
-DESCTOP
 node -v = v21.6.1
-# ProjectStudent
-Все папки node_modules докачивать отдельно в соответствии с версией в файле package.json для фронтенда и досктоп версий!!!
 
-Файлы Сервер, Терминал актуальны для Линукс
-
-Настройка запуска и упаковки под Виндовс 10!
-
-При запуске билд версии в виндовс:
+# Инструкция по заупуску!
 1. Скачать репозиторий с исходниками
-2. Закомментить игнор папок в .gitignore в корне репозитория.
-3. Открыть папку nazvanie_projecta в терминале => npm i 
-4. Открыть файл package.json и изменить следующие строки:
-"start": "set BROWSER=none && react-scripts start",
-”dev”: "set ELECTRON_START_URL=http://localhost:3000 && electron .”
-"main": "build/electron/main.js",
-Теперь запуск проекта для разработки будет такими двумя командами в разных терминалах:
+2. Открыть папку app в терминале => npm i 
+3. Для запуска в режиме разработки npm start, npm run dev в разных терминала
 
-npm start
-npm run dev
+# Сборка проекта в готовое приложение:
 
-При сборке проекта в готовое приложение под виндовс:
-1. приводим одноименый блок кода в файле mine.js к такому виду 
-// и загрузить index.html приложения.
-  mainWindow.loadFile(path.join(__dirname,'../index.html'));//закомменитровать если надо перейти к dev версии
+Для Windows:
+1. npm run build
+2. npm install --save-dev @electron-forge/maker-squirrel
+3. npm run package-win
+4. Смотрим папку dist
 
-  const startUrl = process.env.ELECTRON_START_URL || url.format({
-    pathname: path.join(__dirname, '../index.html'),
-    protocol: 'file:',
-    slashes: true
-  });
+Для Linux:
+1. npm run build
+2. npm run package-linux
+3. Смотрим папку dist
 
-  //mainWindow.loadURL(startUrl); //закомментировать если надо перейти к билд версии
-  //mainWindow.loadURL('http://localhost:3000');//закомментировать если надо перейти к билд версии
-
-  // Отображаем средства разработчика.
-  //mainWindow.webContents.openDevTools()
-  mainWindow.setMenuBarVisibility(false);
-
-2. в консоле npm run build
-3. Папку electron кидаем в папку build
-4. в консоле npm install --save-dev electron-builder если не установлен
-5. в консоле npm run package
-6. Смотрим содержимое папки dist, запускать, или с установочного, или через exe
-
-Настройка запуска и упаковки под Linux!
-
-1. Скачать репозиторий с исходниками
-2. Закомментить игнор папок в .gitignore в корне репозитория.
-3. Открыть папку nazvanie_projecta в терминале => npm i 
-4. Открыть файл package.json и изменить следующие строки:
- "start": "export BROWSER=none && react-scripts start",
-"dev": "ELECTRON_START_URL=http://localhost:3000 electron .",
-
-Теперь запуск проекта для разработки будет такими двумя командами в разных терминалах:
-
-npm start
-npm run dev
